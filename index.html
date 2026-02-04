@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>iPhone Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1> Star shop</h1>
+  <button onclick="openCart()">🛒 Panier (<span id="count">0</span>)</button>
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+  <div class="slides">
+    <img src="image/yuyu.jpg">
+    <img src="image/pou.jpg">
+    <img src="image/io.jpg">
+  </div>
+</div>
+
+<h2>Nos iPhones</h2>
+
+<section class="products">
+  <div class="product">
+    <img src="image/koz.jpg">
+    <h3>iPhone 13</h3>
+    <p>350 000 FCFA</p>
+    <button onclick="addToCart('iPhone 13',350000)">Ajouter</button>
+  </div>
+
+  <div class="product">
+    <img src="image/uu.jpg">
+    <h3>iPhone 14</h3>
+    <p>450 000 FCFA</p>
+    <button onclick="addToCart('iPhone 14',450000)">Ajouter</button>
+  </div>
+
+  <div class="product">
+    <image src="image/ii.jpg">
+    <h3>iPhone 6</h3>
+    <p>40 000 FCFA</p>
+    <button onclick="addToCart('iPhone 15',550000)">Ajouter</button>
+  </div>
+  
+  <div class="product">
+  <image src="image/bac.png">
+    <h3>iPhone 14</h3>
+    <p>350 000 FCFA</p>
+    <button onclick="addToCart('iPhone 15',550000)">Ajouter</button>
+</div>
+
+  <div class="product">
+  <image src="image/ip.png">
+    <h3>iPhone 16</h3>
+    <p>650 000 FCFA</p>
+    <button onclick="addToCart('iPhone 15',550000)">Ajouter</button>
+</div>
+
+  <div class="product">
+    <image src="image/x.jpg">
+      <h3>iPhone x</h3>
+      <p>150 000 FCFA</p>
+      <button onclick="addToCart('iPhone 15',550000)">Ajouter</button>
+  </div>
+  
+  
+  <div class="product">
+    <image src="image/rr.webp">
+      <h3>iPhone x</h3>
+      <p>150 000 FCFA</p>
+      <button onclick="addToCart('iPhone 15',550000)">Ajouter</button>
+  </div>
+  
+   <div class="product">
+    <image src="image/pd.jpg">
+      <h3>iPhone 16</h3>
+      <p>750 000 FCFA</p>
+      <button onclick="addToCart('iPhone 15',550000)">Ajouter</button>
+  </div>
+</section>
+
+<!-- PANIER -->
+<div id="cart" class="cart">
+  <h2>Panier</h2>
+  <ul id="cartItems"></ul>
+  <p>Total: <span id="total">0</span> FCFA</p>
+  <button onclick="orderWhatsApp()">Commander sur WhatsApp</button>
+  <button onclick="closeCart()">Fermer</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
